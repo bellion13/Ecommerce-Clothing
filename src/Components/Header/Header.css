@@ -8,6 +8,7 @@
 .header__logo a {
     display: flex;
     align-items: center;
+    
 }
 .header__logo p {
     font-size: 28px;
@@ -26,6 +27,7 @@
     font-weight: 500;
     color: var(--black-color);
     cursor: pointer;
+    
 }
 
 .header__nav hr {
@@ -43,6 +45,7 @@
     gap: 40px;
 }
 .header__login-cart button {
+
     padding: 10px 25px;
     border: 1px solid var(--primary-color);
     background-color: var(--white-color);
@@ -50,6 +53,8 @@
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
 }
 .header__login-cart button:hover {
     background-color: var(--primary-color);

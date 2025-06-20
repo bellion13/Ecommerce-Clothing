@@ -6,6 +6,7 @@
     display: flex;
 }
 .hero__left {
+    padding-left: 50px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@
 }
 .hero__left h2 {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 32px;
     color: var(--black-color);
 }
 .hero__left__hand-icon {
@@ -24,7 +25,7 @@
     gap: 10px;
 }
 .hero__left__text p {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 600;
     color: var(--black-color);
     line-height: 1.2;
