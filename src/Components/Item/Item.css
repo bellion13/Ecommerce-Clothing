@@ -1,7 +1,11 @@
 .item {
     cursor: pointer;
-    width: 350px;
-
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .item p {
     margin: 6px 0px;

@@ -8,6 +8,7 @@ import Shop from './Pages/Shop/Shop';
 import Detail from './Pages/Detail/Detail';
 import Cart from './Pages/Cart/Cart';
 import Login from './Pages/Login/Login';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div>
@@ -24,6 +25,8 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/cart" element={<Cart/>} />
         </Routes>
+        <Footer />
+      
 
       </BrowserRouter>
     </div>
