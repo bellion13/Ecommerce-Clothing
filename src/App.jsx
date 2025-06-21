@@ -7,7 +7,7 @@ import Category from './Pages/Category/Category';
 import Shop from './Pages/Shop/Shop';
 import Detail from './Pages/Detail/Detail';
 import Cart from './Pages/Cart/Cart';
-import Login from './Pages/Login/Login';
+import LoginSignup from './Pages/LoginSignup/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import men_banner from "./Assets/banner_mens.png";
 import women_banner from "./Assets/banner_women.png";
@@ -26,7 +26,7 @@ function App() {
           <Route path="/detail" element={<Detail />}>
             <Route path=":detailId" element={<Detail />} />
           </Route>
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<LoginSignup />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />

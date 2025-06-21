@@ -1,5 +1,6 @@
 import React from 'react'
 import './Category.css'
+import { useState } from 'react'
 import all_product from "../../Assets/all_product"
 import dropdown_icon from "../../Assets/dropdown_icon.png"
 import Item from '../../Components/Item/Item'
@@ -9,6 +10,12 @@ const Category = (props) => {
   const filteredProducts = all_product.filter(
     (item) => item.category === props.category
   );
+  // Số lượng sản phẩm hiển thị
+  const [visibleCount, setVisibleCount] = useState(8); // 👈 Mặc định hiện 8
+
+  const handleLoadMore = () => {
+    setVisibleCount(prev => prev + 4); // 👈 Mỗi lần load thêm 4
+  };
   return (
     <div className='container'>
       <div className='category'>
@@ -25,7 +32,7 @@ const Category = (props) => {
           </div>
         </div>
         <div className='category__products'>
-          {filteredProducts.map((item, i) => (
+          {filteredProducts.slice(0, visibleCount).map((item, i) => (
             <Item
               key={i}
               id={item.id}
@@ -37,6 +44,11 @@ const Category = (props) => {
             />
           ))}
         </div>
+        {visibleCount < filteredProducts.length && (
+          <div className="category__loadmore">
+            <button onClick={handleLoadMore}>Load more</button>
+          </div>
+        )}
       </div>
     </div>
   )
