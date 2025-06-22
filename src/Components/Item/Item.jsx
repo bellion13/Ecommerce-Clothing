@@ -1,8 +1,10 @@
 import React from 'react'
 import './Item.css'
+import { Link } from 'react-router-dom'
 const Item = (props) => {
   return (
     <div className='item'>
+    <Link to={`/detail/${props.id}`} onClick={window.scrollTo(0,0)} className='item-link'>
         <img src={props.image} alt="" />
         <p>{props.name}</p>
         <div className='item-prices'>
@@ -13,6 +15,7 @@ const Item = (props) => {
                 ${props.old_price}
             </div>
         </div>
+    </Link>
     </div>
   )
 }

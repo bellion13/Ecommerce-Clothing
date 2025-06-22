@@ -1,0 +1,11 @@
+.description {
+    margin: 20px 0;
+}
+.description-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.description-content {
+    font-size: 16px;
+}
