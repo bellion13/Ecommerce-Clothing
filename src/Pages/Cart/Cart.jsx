@@ -1,8 +1,7 @@
 import React from 'react'
 import './Cart.css'
 import { useContext } from 'react';
-// import all_products from '../../assets/all_product'
-import cart_cross_icon from '../../Assets/cart_cross_icon.png'
+import cart_cross_icon from '@/Assets/cart_cross_icon.png'
 import { CartContext } from '../../Context/CartContext/CartContext';
 const Cart = () => {
   const { cartItems, increaseQuantity, decreaseQuantity, removeFromCart } = useContext(CartContext);
