@@ -16,8 +16,6 @@ export default defineConfig({
     extensions: ['.js', '.jsx', '.json', '.png'],
   },
   server: {
-    port: 3000,
-    strictPort: true,
     headers: {
       'Content-Type': 'application/javascript',
     },
