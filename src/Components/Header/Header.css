@@ -29,13 +29,13 @@
     cursor: pointer;
     
 }
-
 .header__nav hr {
     width: 80%;
     margin: 0 auto;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
 }
+
 .header__nav ul li:hover {
     color: var(--primary-color);
 }
